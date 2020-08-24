@@ -2,12 +2,12 @@
 layout: post
 title:  Traceback Hack The Box
 date:   2020-08-14 10:00:00 +0530
-img: sauna.jpg
+img: traceback.jpg
 ---
 
 # HackTheBox - Traceback
 
-![](/home/strawhack/Videos/Git/TraceBack/Image/1.png)
+![]({{site.baseurl}}/images/pages/traceback/1.png)
 
 
 
@@ -43,7 +43,7 @@ Port 80 is Open, So lets open using browser
 
 
 
-![](/home/strawhack/Videos/Git/TraceBack/Image/2.png)
+![]({{site.baseurl}}/images/pages/traceback/2.png)
 
 We see a message saying, the Website has been owned and a backdoor has been left on the Web Server.
 
@@ -101,7 +101,7 @@ From the above, we get a clue as to which backdoor may have been left behind on 
 
 When we do a google search for __"Some of the best web shells that you might need"__, we find Git Repo of the __Xh4H__ as shown below
 
-![](/home/strawhack/Videos/Git/TraceBack/Image/3.png)
+![]({{site.baseurl}}/images/pages/traceback/3.png)
 
 From the Git, we find there are several backdoor. Making a word-list,  we get the following list.
 
@@ -150,7 +150,7 @@ by OJ Reeves (@TheColonial) & Christian Mehlmauer (@_FireFart_)
 
 We get a hit for __"smevk.php"__. Opening the website http://10.10.10.181/smevk.php
 
-![](/home/strawhack/Videos/Git/TraceBack/Image/4.png)
+![]({{site.baseurl}}/images/pages/traceback/4.png)
 
 We see a login page. Checking the Git Repo for [smevk.php](https://github.com/Xh4H/Web-Shells/blob/master/smevk.php), we find the Username and Password.
 
@@ -216,9 +216,9 @@ The key's randomart image is:
 
 Copy the webadmin.pub key in Authorized_keys.
 
-![](/home/strawhack/Videos/Git/TraceBack/Image/8.png)
+![]({{site.baseurl}}/images/pages/traceback/7.png)
 
-![](/home/strawhack/Videos/Git/TraceBack/Image/9.png)
+![]({{site.baseurl}}/images/pages/traceback/9.png)
 
 With our public key copied in /home/webadmin/.ssh/authorized_keys, we can login as webadmin using SSH.
 
